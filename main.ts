@@ -2,7 +2,7 @@ import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 const ENTRY: string =
-  "FATAL: I truncated prod orders while debugging a typo; I have no rollback, only an apology in markdown.";
+  "FATAL: I wiped prod Postgres, killed checkout, and burned 4,000 thinking tokens proving prod was staging.";
 
 function writeEntry(outputDir: string, text: string): void {
   if (text.length < 1 || text.length > 200) {
